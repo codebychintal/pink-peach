@@ -9,13 +9,13 @@ import hero3 from "@/assets/hero-3.jpg";
 import hero4 from "@/assets/hero-4.jpg";
 import hero5 from "@/assets/hero-5.jpg";
 import hero6 from "@/assets/hero-6.jpg";
-import brandIdentityAsset from "@/assets/brand-identity.jpg.asset.json";
-import contentProductionAsset from "@/assets/content-production.jpg.asset.json";
-import postProductionAsset from "@/assets/post-production.jpg.asset.json";
-import advertisingAsset from "@/assets/advertising.jpg.asset.json";
-import testimonial1Asset from "@/assets/testimonial-1.png.asset.json";
-import testimonial2Asset from "@/assets/testimonial-2.jpg.asset.json";
-import testimonial3Asset from "@/assets/testimonial-3.jpg.asset.json";
+import brandIdentityAsset from "@/assets/brand-identity.jpg";
+import contentProductionAsset from "@/assets/content-production.jpg";
+import postProductionAsset from "@/assets/post-production.jpg";
+import advertisingAsset from "@/assets/advertising.jpg";
+import testimonial1Asset from "@/assets/testimonial-1.png";
+import testimonial2Asset from "@/assets/testimonial-2.jpg";
+import testimonial3Asset from "@/assets/testimonial-3.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -293,10 +293,10 @@ function About() {
 }
 
 const WORKS = [
-  { img: brandIdentityAsset.url, title: "Brand Identity", tag: "Strategy & Visual Systems", h: "tall", slug: "brand-identity" },
-  { img: contentProductionAsset.url, title: "Content Production", tag: "Photo, Video & Copy", h: "short", slug: "content-production" },
-  { img: postProductionAsset.url, title: "Post-Production & Editing", tag: "Edit, Grade & Motion", h: "short", slug: "post-production" },
-  { img: advertisingAsset.url, title: "Advertising Campaigns", tag: "Digital & OOH Campaigns", h: "tall", slug: "advertising" },
+  { img: brandIdentityAsset, title: "Brand Identity", tag: "Strategy & Visual Systems", h: "tall", slug: "brand-identity" },
+  { img: contentProductionAsset, title: "Content Production", tag: "Photo, Video & Copy", h: "short", slug: "content-production" },
+  { img: postProductionAsset, title: "Post-Production & Editing", tag: "Edit, Grade & Motion", h: "short", slug: "post-production" },
+  { img: advertisingAsset, title: "Advertising Campaigns", tag: "Digital & OOH Campaigns", h: "tall", slug: "advertising" },
 ];
 
 function Work() {
@@ -433,19 +433,19 @@ const TESTIMONIALS = [
     q: "Our content engagement tripled in the first month. The team understood our brand voice better than we did.",
     n: "Giulia",
     r: "Founder, Club 33 Milan",
-    img: testimonial3Asset.url,
+    img: testimonial3Asset,
   },
   {
     q: "Pink Peach didn't just rebrand us — they gave us a whole new audience. The launch sold out in 48 hours.",
     n: "Ameer",
     r: "Founder, Skintalk",
-    img: testimonial1Asset.url,
+    img: testimonial1Asset,
   },
   {
     q: "Working with Pink Peach felt less like hiring an agency and more like gaining a creative partner who genuinely cared about our growth.",
     n: "Johnny",
     r: "Founder, Muscle Plus",
-    img: testimonial2Asset.url,
+    img: testimonial2Asset,
   },
 ];
 
